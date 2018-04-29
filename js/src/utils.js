@@ -333,7 +333,7 @@ $(document).ready(function () {
 
   function updateSidebarHeight (height) {
     height = height || 'auto';
-    $('.site-overview, .post-toc').css('max-height', height);
+    //$('.site-overview, .post-toc').css('max-height', height);
   }
 
 });

@@ -381,7 +381,7 @@ kbd {
   margin-right: 5px;
 }
 .affix.affix.affix {
-  position: fixed;
+  position: static;
 }
 .translation {
   margin-top: -20px;
@@ -1887,7 +1887,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #130569;
+  background: #50d4ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2909,6 +2909,49 @@ pre .javascript .function {
   bottom: auto;
   -webkit-transform: none;
 }
+.sidebar-div {
+  position: relative;
+  box-sizing: border-box;
+  color: #555;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  border-radius: initial;
+  margin: 15px 0;
+}
+.sidebar-div h1 {
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+  font-weight: normal;
+  background: #000;
+  color: #fff;
+  line-height: 1.8rem;
+  text-align: left;
+}
+.sidebar-div .category-list {
+  padding: 0 20px 20px 40px;
+  list-style: none;
+}
+.sidebar-div .category-list a {
+  color: #555;
+  border: 0;
+}
+.sidebar-div .category-list .category-list-count {
+  color: #c1c1c1;
+  margin-left: 5px;
+}
+.sidebar-div .category-list .category-list-count:before {
+  content: "\5B";
+}
+.sidebar-div .category-list .category-list-count:after {
+  content: "\5D";
+}
+.sidebar-div .tag-cloud-tags {
+  padding: 10px 0;
+}
+.sidebar-div .tag-cloud-tags a {
+  border: 0;
+}
 .sidebar-inner {
   box-sizing: border-box;
   width: 240px;
@@ -3119,10 +3162,11 @@ pre .javascript .function {
 }
 .post-body h3 {
   font-size: 1.3em;
-  border-bottom: 1px dotted #eee;
+  border-bottom: 1px solid #eee;
 }
 .post-body h4 {
   font-size: 1.2em;
+  border-bottom: 1px dotted #eee;
 }
 .post-body h5 {
   font-size: 1.07em;
