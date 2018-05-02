@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[hexo+七牛云命令工具存储图片.md]]></title>
+    <title><![CDATA[Markdown 语法手册]]></title>
+    <url>%2FMarkdown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C20180429%2F</url>
+    <content type="text"><![CDATA[Markdown 是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。 Markdown 语法简洁明了，易于掌握，所以用它来写作是件既效率又舒服的事情。我们所熟知的和一些大型CMS，如Joomla!、Drupal等都能很好的支持Markdown。我是因为写GitHub项目库中的Readme才开始接触Markdown。 Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。 Headers 标题：123456# H1## H2### H3#### H4##### H5###### H6 另外，H1和H2还能用以下方式显示：12345一级标题===二级标题---]]></content>
+      <categories>
+        <category>其他技术</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo+七牛云命令工具存储图片]]></title>
     <url>%2Fhexo-%E4%B8%83%E7%89%9B%E4%BA%91%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%8720180428%2F</url>
     <content type="text"><![CDATA[##加入图片的几种方式 Hexo文章中的图片，可以放在本地，然后和静态文件一起发布（部署）到你的空间。将图片放在source/images目录下，然后直接引入比较麻烦，也占用资源，想到后期图片增多的加载速度问题，果断放弃 使用各种图床，如：贴图库,注册个用户,直接上传图片不是很稳定,而且每次都要打开web，然后上传，我是个懒人~~~~ 使用七牛云的命令行工具 首先下载工具：点击这里该工具由于是命令行工具，所以只需要从上面的下载链接下载后即可执行使用（建议重命名为qshell）。但每次都要找到目录打开这个命令行工具有木有很麻烦!~那么配置全局使用吧 增加环境变量，以mac为例，mac系统的环境变量文件有几个，我因为是全局公用的,所以我选择使用~/.bashrc文件 –打开cmd命令行,输入 1vim ~/.bashrc 进入编辑模式,增加1export PATH=$PATH:刚才下载的七牛命令行工具的位置 如果文件中以前有path环境变量,直接 :位置加后面就可以了保存然后执行1$ source ~/.bashrc 验证一下1$ qshell -v 如果成功会显示版本号 设置密钥,ak和sk登录七牛云个人中心-&gt;密钥管理中查看1$ qshell account ak sk 安装完成，开始使用上传图片有几种 上传100MB以下的小文件1$ qshell fput &lt;Bucket&gt; &lt;Key&gt; &lt;LocalFile&gt; [Overwrite] [MimeType] [UpHost] [FileType] 参数名称 描述 默认 Bucket 七牛空间名称 N Key 文件保存在七牛空间的名称 N LocalFile 本地文件的路径 N Overwrite 可选,是否覆盖空间已有文件，默认为false Y MimeType 可选,指定文件的MimeType Y UpHost 可选,上传入口地址 Y FileType 可选,文件存储类型，0(标准存储）1(低频存储) 0 如:上传后,在你的md文件中直接引入就OK了1![](https://p7vioebko.bkt.clouddn.com/a.jpg) 前面是七牛外联域名: 上传文件大小较大的文件 1$ qshell rput &lt;Bucket&gt; &lt;Key&gt; &lt;LocalFile&gt; [Overwrite] [MimeType] [UpHost] [FileType] 将本地目录中的文件同步到七牛空间 1$ qshell qupload [&lt;ThreadCount&gt;] &lt;LocalUploadConfig&gt; qupload需要本地配置文件的支持,详情请看:点击这里 从互联网上抓取一个资源并保存到七牛的空间中1$ qshell fetch &lt;RemoteResourceUrl&gt; &lt;Bucket&gt; [&lt;Key&gt;] 参数名 描述 可选参数 RemoteResourceUrl 互联网上资源的链接 Bucket 空间名称 N Key 该资源保存在空间中的名字，如果不指定这个名字，那么会使用抓取的资源的内容hash值来作为文件名 Y 适合大文件的:1$ qshell sync &lt;SrcResUrl&gt; &lt;Bucket&gt; &lt;Key&gt; [&lt;UpHostIp&gt;] 查询文件信息1$ qshell stat &lt;Bucket&gt; &lt;Key&gt; 参数名 描述 Bucket 空间名称 Key 空间中的文件名 删除文件1$ qshell delete &lt;Bucket&gt; &lt;Key&gt; 现在再上传图片就很简单了,再也不用本地找个地方保存图片，也不用每次都开web了：）想了解更多的，可以参考官方文档：官方文档]]></content>
+      <categories>
+        <category>其他技术</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
       </tags>
@@ -29,8 +43,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>next</tag>
         <tag>github</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
