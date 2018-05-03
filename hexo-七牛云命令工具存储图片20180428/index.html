@@ -91,7 +91,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://p7vioebko.bkt.clouddn.com/2.png">
 <meta property="og:image" content="https://p7vioebko.bkt.clouddn.com/1.png">
-<meta property="og:updated_time" content="2018-04-29T09:24:45.680Z">
+<meta property="og:updated_time" content="2018-05-03T09:18:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+七牛云命令工具存储图片">
 <meta name="twitter:description" content="##加入图片的几种方式  Hexo文章中的图片，可以放在本地，然后和静态文件一起发布（部署）到你的空间。将图片放在source/images目录下，然后直接引入比较麻烦，也占用资源，想到后期图片增多的加载速度问题，果断放弃  使用各种图床，如：贴图库,注册个用户,直接上传图片不是很稳定,而且每次都要打开web，然后上传，我是个懒人~~~~  使用七牛云的命令行工具    首先下载工具：点击这里该工">
@@ -444,9 +444,9 @@
 </li>
 </ol>
 <ul>
-<li><p>首先下载工具：<a href="https://developer.qiniu.com/kodo/tools/1302/qshell" target="_blank" rel="noopener">点击这里</a><br>该工具由于是命令行工具，所以只需要从上面的下载链接下载后即可执行使用（建议重命名为qshell）。<br>但每次都要找到目录打开这个命令行工具有木有很麻烦!~那么配置全局使用吧</p>
+<li><p><strong>首先下载工具</strong>：<a href="https://developer.qiniu.com/kodo/tools/1302/qshell" target="_blank" rel="noopener">点击这里</a><br>该工具由于是命令行工具，所以只需要从上面的下载链接下载后即可执行使用（建议重命名为qshell）。<br>但每次都要找到目录打开这个命令行工具有木有很麻烦!~那么配置全局使用吧</p>
 </li>
-<li><p>增加环境变量，以mac为例，mac系统的环境变量文件有几个，我因为是全局公用的,所以我选择使用~/.bashrc文件<br>  –打开cmd命令行,输入</p>
+<li><p><strong>增加环境变量</strong>，以mac为例，mac系统的环境变量文件有几个，我因为是全局公用的,所以我选择使用~/.bashrc文件<br>  –打开cmd命令行,输入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bashrc</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -456,10 +456,7 @@
 <p>如果成功会显示版本号</p>
 <p>设置密钥,ak和sk登录七牛云个人中心-&gt;密钥管理中查看<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell account ak sk</span><br></pre></td></tr></table></figure></p>
 <p><strong>安装完成，开始使用</strong><br>上传图片有几种</p>
-<ol>
-<li>上传100MB以下的小文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell fput &lt;Bucket&gt; &lt;Key&gt; &lt;LocalFile&gt; [Overwrite] [MimeType] [UpHost] [FileType]</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<h3 id="1-上传100MB以下的小文件"><a href="#1-上传100MB以下的小文件" class="headerlink" title="1. 上传100MB以下的小文件"></a>1. 上传100MB以下的小文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell fput &lt;Bucket&gt; &lt;Key&gt; &lt;LocalFile&gt; [Overwrite] [MimeType] [UpHost] [FileType]</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -508,19 +505,10 @@
 </table>
 <p>如:<br><img src="https://p7vioebko.bkt.clouddn.com/2.png" alt=""><br>上传后,在你的md文件中直接引入就OK了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](https://p7vioebko.bkt.clouddn.com/a.jpg)</span><br></pre></td></tr></table></figure></p>
 <p>前面是七牛外联域名:<br><img src="https://p7vioebko.bkt.clouddn.com/1.png" alt=""></p>
-<ol start="2">
-<li><p>上传文件大小较大的文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell rput &lt;Bucket&gt; &lt;Key&gt; &lt;LocalFile&gt; [Overwrite] [MimeType] [UpHost] [FileType]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将本地目录中的文件同步到七牛空间</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell qupload [&lt;ThreadCount&gt;] &lt;LocalUploadConfig&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<h3 id="2-上传文件大小较大的文件"><a href="#2-上传文件大小较大的文件" class="headerlink" title="2. 上传文件大小较大的文件"></a>2. 上传文件大小较大的文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell rput &lt;Bucket&gt; &lt;Key&gt; &lt;LocalFile&gt; [Overwrite] [MimeType] [UpHost] [FileType]</span><br></pre></td></tr></table></figure>
+<h3 id="3-将本地目录中的文件同步到七牛空间"><a href="#3-将本地目录中的文件同步到七牛空间" class="headerlink" title="3. 将本地目录中的文件同步到七牛空间"></a>3. 将本地目录中的文件同步到七牛空间</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell qupload [&lt;ThreadCount&gt;] &lt;LocalUploadConfig&gt;</span><br></pre></td></tr></table></figure>
 <p>qupload需要本地配置文件的支持,详情请看:<a href="https://github.com/qiniu/qshell/blob/master/docs/qupload.md" target="_blank" rel="noopener">点击这里</a></p>
-<ol start="4">
-<li>从互联网上抓取一个资源并保存到七牛的空间中<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell fetch &lt;RemoteResourceUrl&gt; &lt;Bucket&gt; [&lt;Key&gt;]</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<h3 id="4-从互联网上抓取一个资源并保存到七牛的空间中"><a href="#4-从互联网上抓取一个资源并保存到七牛的空间中" class="headerlink" title="4. 从互联网上抓取一个资源并保存到七牛的空间中"></a>4. 从互联网上抓取一个资源并保存到七牛的空间中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell fetch &lt;RemoteResourceUrl&gt; &lt;Bucket&gt; [&lt;Key&gt;]</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -547,10 +535,7 @@
 </tbody>
 </table>
 <p>适合大文件的:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell sync &lt;SrcResUrl&gt; &lt;Bucket&gt; &lt;Key&gt; [&lt;UpHostIp&gt;]</span><br></pre></td></tr></table></figure></p>
-<ol start="5">
-<li>查询文件信息<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell stat &lt;Bucket&gt; &lt;Key&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<h3 id="5-查询文件信息"><a href="#5-查询文件信息" class="headerlink" title="5. 查询文件信息"></a>5. 查询文件信息</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell stat &lt;Bucket&gt; &lt;Key&gt;</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -569,10 +554,7 @@
 </tr>
 </tbody>
 </table>
-<ol start="6">
-<li>删除文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell delete &lt;Bucket&gt; &lt;Key&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<h3 id="6-删除文件"><a href="#6-删除文件" class="headerlink" title="6. 删除文件"></a>6. 删除文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ qshell delete &lt;Bucket&gt; &lt;Key&gt;</span><br></pre></td></tr></table></figure>
 <p>现在再上传图片就很简单了,再也不用本地找个地方保存图片，也不用每次都开web了：）<br>想了解更多的，可以参考官方文档：<a href="https://developer.qiniu.com/kodo/tools/1302/qshell" target="_blank" rel="noopener">官方文档</a></p>
 
       
@@ -595,7 +577,7 @@
   <p><span>本文标题:</span><a href="/hexo-七牛云命令工具存储图片20180428/">hexo+七牛云命令工具存储图片</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 zhuyt 的个人博客">zhuyt</a></p>
   <p><span>发布时间:</span>2018年04月28日</p>
-  <p><span>最后更新:</span>2018年04月29日</p>
+  <p><span>最后更新:</span>2018年05月03日</p>
   <p><span>原始链接:</span><a href="/hexo-七牛云命令工具存储图片20180428/" title="hexo+七牛云命令工具存储图片">https://laayoune.github.io/hexo-七牛云命令工具存储图片20180428/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://laayoune.github.io/hexo-七牛云命令工具存储图片20180428/"  aria-label="复制成功！"></i></span>
   </p>
@@ -655,8 +637,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/next主题第三方配置20180428/" rel="next" title="hexo next主题第三方配置 评论 统计等">
-                <i class="fa fa-chevron-left"></i> hexo next主题第三方配置 评论 统计等
+              <a href="/next主题配置20180427/" rel="next" title="hexo+github搭建个人博客之：next主题配置文件详细说明">
+                <i class="fa fa-chevron-left"></i> hexo+github搭建个人博客之：next主题配置文件详细说明
               </a>
             
           </div>
@@ -665,8 +647,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/Markdown语法手册20180429/" rel="prev" title="Markdown 语法手册">
-                Markdown 语法手册 <i class="fa fa-chevron-right"></i>
+              <a href="/next主题第三方配置20180428/" rel="prev" title="hexo next主题第三方配置 评论 统计等">
+                hexo next主题第三方配置 评论 统计等 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -726,12 +708,12 @@
 
     <div class="sidebar-div">
       <h1>文章分类</h1>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/其他技术/">其他技术</a><span class="category-list-count">6</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/App/">App</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/AvalonJS/">AvalonJS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/css/">css</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/其他技术/">其他技术</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/测试/">测试</a><span class="category-list-count">1</span></li></ul>
     </div>
     <div class="tag-cloud sidebar-div">
       <h1>标签</h1>
       <div class="tag-cloud-tags">
-        <a href="/tags/Hexo/" style="font-size: 15px; color: #00f">Hexo</a> <a href="/tags/Markdown/" style="font-size: 12px; color: #f00">Markdown</a> <a href="/tags/github/" style="font-size: 14px; color: #50a">github</a> <a href="/tags/next/" style="font-size: 13px; color: #a05">next</a>
+        <a href="/tags/Android/" style="font-size: 12px; color: #f00">Android</a> <a href="/tags/App/" style="font-size: 12px; color: #f00">App</a> <a href="/tags/AvalonJS/" style="font-size: 12px; color: #f00">AvalonJS</a> <a href="/tags/CSS/" style="font-size: 12px; color: #f00">CSS</a> <a href="/tags/Hexo/" style="font-size: 15px; color: #00f">Hexo</a> <a href="/tags/Markdown/" style="font-size: 12px; color: #f00">Markdown</a> <a href="/tags/Weinre/" style="font-size: 12px; color: #f00">Weinre</a> <a href="/tags/compass/" style="font-size: 13px; color: #a05">compass</a> <a href="/tags/css/" style="font-size: 12px; color: #f00">css</a> <a href="/tags/git/" style="font-size: 12px; color: #f00">git</a> <a href="/tags/github/" style="font-size: 14px; color: #50a">github</a> <a href="/tags/html/" style="font-size: 12px; color: #f00">html</a> <a href="/tags/js/" style="font-size: 12px; color: #f00">js</a> <a href="/tags/next/" style="font-size: 13px; color: #a05">next</a> <a href="/tags/sass/" style="font-size: 13px; color: #a05">sass</a>
       </div>
     </div>
 
@@ -740,8 +722,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -760,7 +751,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -771,7 +762,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -782,7 +773,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -812,6 +803,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-上传100MB以下的小文件"><span class="nav-number">1.</span> <span class="nav-text">1. 上传100MB以下的小文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-上传文件大小较大的文件"><span class="nav-number">2.</span> <span class="nav-text">2. 上传文件大小较大的文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-将本地目录中的文件同步到七牛空间"><span class="nav-number">3.</span> <span class="nav-text">3. 将本地目录中的文件同步到七牛空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-从互联网上抓取一个资源并保存到七牛的空间中"><span class="nav-number">4.</span> <span class="nav-text">4. 从互联网上抓取一个资源并保存到七牛的空间中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-查询文件信息"><span class="nav-number">5.</span> <span class="nav-text">5. 查询文件信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-删除文件"><span class="nav-number">6.</span> <span class="nav-text">6. 删除文件</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -845,7 +852,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共6.3k字</span>
+  <span class="post-count">博客全站共13.3k字</span>
 </div>
 
         
