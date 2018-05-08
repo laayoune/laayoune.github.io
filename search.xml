@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Markdown 语法手册]]></title>
+    <title><![CDATA[Markdown 常用语法]]></title>
     <url>%2FMarkdown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C20180429%2F</url>
-    <content type="text"><![CDATA[Markdown 是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。 Markdown 语法简洁明了，易于掌握，所以用它来写作是件既效率又舒服的事情。我们所熟知的和一些大型CMS，如Joomla!、Drupal等都能很好的支持Markdown。我是因为写GitHub项目库中的Readme才开始接触Markdown。 Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。 Headers 标题：123456# H1## H2### H3#### H4##### H5###### H6 另外，H1和H2还能用以下方式显示：12345一级标题===二级标题--- 粗斜体123*斜体文本* _斜体文本_**粗体文本** __粗体文本__***粗斜体文本*** ___粗斜体文本___ 链接12文字链接 [链接名称](http://链接网址)网址链接 &lt;http://链接网址&gt; 高级链接技巧12345这个链接用 1 作为网址变量 [Google][1].这个链接用 yahoo 作为网址变量 [Yahoo!][yahoo].然后在文档的结尾为变量赋值（网址） [1]: http://www.google.com/ [yahoo]: http://www.yahoo.com/ 图片跟链接的方法区别在于前面加了个感叹号 !，这样是不是觉得好记多了呢？1![图片名称](http://图片网址) 列表普通无序列表123- 列表文本前使用 [减号+空格]+ 列表文本前使用 [加号+空格]* 列表文本前使用 [星号+空格] 普通有序列表1231. 列表前使用 [数字+空格]2. 我们会自动帮你添加数字7. 不用担心数字不对，显示的时候我们会自动把这行的 7 纠正为 列表嵌套12345678910111. 列出所有元素： - 无序列表元素 A 1. 元素 A 的有序子列表 - 前面加四个空格2. 列表里的多段换行： 前面必须加四个空格， 这样换行，整体的格式不会乱3. 列表里引用： &gt; 前面空一行 &gt; 仍然需要在 &gt; 前面加四个空格 引用12&gt; 引用文本前使用 [大于号+空格]&gt; 折行可以不加，新起一行都要加上哦 表格第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行12345学号|姓名|分数:-|:-:|-:小明|男|75小红|女|79小陆|男|92 效果:学号|姓名|分数:-|:-:|-:小明|男|75小红|女|79小陆|男|92 代码如果你只想高亮语句中的某个函数名或关键字，可以使用 `function_name()` 实现 通常编辑器根据代码片段适配合适的高亮方法，但你也可以用 ``` 包裹一段代码，并指定一种语言 支持的语言：1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir 换行如果另起一行，只需在当前行结尾加 2 个空格如果是要起一个新段落，只需要空出一行即可。 分隔符如果你有写分割线的习惯，可以新起一行输入三个减号-。当前后都有段落时，请空出一行：12345前面的段落---后面的段落 注脚在需要添加注脚的文字后加上脚注名字[^注脚名字],称为加注123使用 Markdown[^1]可以效率的书写文档。[^1]:Markdown是一种纯文本标记语言]]></content>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>其他技术</category>
       </categories>
@@ -69,6 +69,106 @@
       <tags>
         <tag>Hexo</tag>
         <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[移动端复制到剪贴板]]></title>
+    <url>%2F%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%A4%8D%E5%88%B6%E5%88%B0%E5%89%AA%E8%B4%B4%E6%9D%BF20170703%2F</url>
+    <content type="text"><![CDATA[12345678910111213function Copy(str)&#123; var save = function(e)&#123; e.clipboardData.setData(&apos;text/plain&apos;, str); e.preventDefault(); &#125; document.addEventListener(&apos;copy&apos;, save); document.execCommand(&apos;copy&apos;); document.removeEventListener(&apos;copy&apos;,save); alert(&apos;复制成功！&apos;);&#125;$(&apos;#cardList&apos;).on(&apos;click&apos;, &apos;div.btn&apos;, function()&#123; Copy($(this).prev(&apos;div&apos;).find(&apos;span.code&apos;).text());&#125;);]]></content>
+      <categories>
+        <category>Wap开发</category>
+      </categories>
+      <tags>
+        <tag>wap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[解决移动端Retina屏幕1px边框问题]]></title>
+    <url>%2F%E8%BE%B9%E6%A1%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%8820170613%2F</url>
+    <content type="text"><![CDATA[造成边框变粗的原因其实这个原因很简单，因为css中的1px并不等于移动设备的1px，这是由于不同的手机有不同的像素密度。在window对象中有一个devicePixelRatio属性，他可以反应css中的像素与设备的像素比。 devicePixelRatio的官方的定义为：设备物理像素和设备独立像素的比例，也就是 devicePixelRatio = 物理像素 / 独立像素。 解决边框变粗的办法:可以百度，有很多种，我常用的如下： 1. 伪类 + transform 实现123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105.line-t,.line-b,.line-l,.line-r,.line-tb,.line&#123; position: relative;&#125;.line-l:before,.line-r:after &#123; width: 1px; height: 100%; background-color: $c_line; display: block; content: ''; position: absolute; z-index: 2; top: 0; bottom: auto; -webkit-transform-origin: 50% 100%; transform-origin: 50% 100%; pointer-events: none;&#125;.line-t:before,.line-b:after &#123; width: 100%; height: 1px; background-color: $c_line; display: block; content: ''; position: absolute; z-index: 2; left: 0; right: auto; -webkit-transform-origin: 100% 50%; transform-origin: 100% 50%; pointer-events: none;&#125;.line-l:before &#123; right: auto; left: 0;&#125;.line-r:after &#123; right: 0; left: auto;&#125;.line-t:before &#123; bottom: auto; top: 0;&#125;.line-b:after &#123; bottom: 0; top: auto;&#125;.line:after &#123; display: block; content: ''; position: absolute; top: 0; bottom: auto; left: 0; right: auto; -webkit-transform-origin: 0 0; -webkit-transform: scale(1); pointer-events: none; border: 1px solid $c_line;&#125;@media screen and (-webkit-min-device-pixel-ratio:1.5) &#123; .line:after &#123; right: -100%; bottom: -100%; -webkit-transform: scale(0.5); &#125;&#125;@media only screen and (-webkit-min-device-pixel-ratio: 1.5) &#123; .line-r:after, .line-l:before &#123; -webkit-transform: scaleX(1); transform: scaleX(1); &#125; .line-t:before, .line-b:after &#123; -webkit-transform: scaleY(1); transform: scaleY(1); &#125;&#125;@media only screen and (-webkit-min-device-pixel-ratio: 2) &#123; .line-r:after, .line-l:before &#123; -webkit-transform: scaleX(0.5); transform: scaleX(0.5); &#125; .line-t:before, .line-b:after &#123; -webkit-transform: scaleY(0.5); transform: scaleY(0.5); &#125;&#125;@media only screen and (-webkit-min-device-pixel-ratio: 3) &#123; .line-r:after, .line-l:before &#123; -webkit-transform: scaleX(0.333); transform: scaleX(0.333); &#125; .line-t:before, .line-b:after &#123; -webkit-transform: scaleY(0.333); transform: scaleY(0.333); &#125;&#125; 优点:对于现代移动浏览器兼容性好、代码少缺点：同时设置两条或者三条边线需要单独处理 2.flexible.js这是淘宝移动端采取的方案, github的地址:https://github.com/amfe/lib-flexible 前面已经说过1px变粗的原因就在于一刀切的设置viewport宽度, 如果能把viewport宽度设置为实际的设备物理宽度, css里的1px不就等于实际1px长了么. flexible.js就是这样干的. &lt;meta name=”viewport”&gt;里面的scale值指的是对ideal viewport的缩放, flexible.js检测到IOS机型, 会算出scale = 1/devicePixelRatio, 然后设置viewport 123metaEl = doc.createElement(&apos;meta&apos;);metaEl.setAttribute(&apos;name&apos;, &apos;viewport&apos;);metaEl.setAttribute(&apos;content&apos;, &apos;initial-scale=&apos; + scale + &apos;, maximum-scale=&apos; + scale + &apos;, minimum-scale=&apos; + scale + &apos;, user-scalable=no&apos;); devicePixelRatio=2时输出meta如下, 这样viewport与ideal viewport的比是0.5, 也就与设备物理像素一致1&lt;meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no"&gt; 另外html元素上的font-size会被设置为屏幕宽的1/10, 这样css可以以rem为基础长度单位进行改写, 比如rem是28px, 原先的7px就是0.25rem. border的宽度能直接写1px.123456789function refreshRem() &#123; var width = docEl.getBoundingClientRect().width; if (width / dpr &gt; 540) &#123; //大于540px可以不认为是手机屏 width = 540 * dpr; &#125; var rem = width / 10; docEl.style.fontSize = rem + &apos;px&apos;; flexible.rem = win.rem = rem;&#125; px和rem相互转换的计算方法会暴露在window.lib.flexible中. 这样可以为less/sass编写宏方法. 具体的css改写方法参照大漠的文章http://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html 项目中特别指出了为了防止字体模糊, 出现奇数字号的字体, 字体的实际单位还是要以px为单位. 缺点:不适用安卓, flexible内部做了检测 非iOS机型还是采用传统的scale=1.0, 原因在于安卓手机不一定有devicePixelRatio属性, 就算有也不一定能响应scale小于1的viewport缩放设置, 例如我的手机设置了scale=0.33333333, 显示的结果也与scale=1无异. 综合使用 对于IOS, flexible.js处理的已经很好了, 对于Android,方法2,3,4结合起来大体可以满足要求. flexible.js虽然不适用于安卓, 但它里面的这一段代码可以用来做对安卓机的部署.12345678910111213141516171819if (!dpr &amp;&amp; !scale) &#123; var isAndroid = win.navigator.appVersion.match(/android/gi); var isIPhone = win.navigator.appVersion.match(/iphone/gi); var devicePixelRatio = win.devicePixelRatio; if (isIPhone) &#123; // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案 if (devicePixelRatio &gt;= 3 &amp;&amp; (!dpr || dpr &gt;= 3)) &#123; dpr = 3; &#125; else if (devicePixelRatio &gt;= 2 &amp;&amp; (!dpr || dpr &gt;= 2))&#123; dpr = 2; &#125; else &#123; dpr = 1; &#125; &#125; else &#123; // 其他设备下，仍旧使用1倍的方案 dpr = 1; &#125; scale = 1 / dpr;&#125; 这里对安卓做检测, 如果是安卓, js动态加载css.12345var link = document.createElement(&apos;link&apos;);link.setAttribute(&quot;rel&quot;,&quot;stylesheet&quot;);link.setAttribute(&quot;type&quot;,&quot;text/css&quot;);link.setAttribute(&quot;href&quot;,&quot;.......Android.css&quot;);document.querySelector(&apos;head&apos;).appendChild(link); 还可以参考下其余各大主流网站的实现,可以参考]]></content>
+      <categories>
+        <category>Wap开发</category>
+      </categories>
+      <tags>
+        <tag>wap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css去除chrome下select元素默认border-radius]]></title>
+    <url>%2Fcss%E5%8E%BB%E9%99%A4chrome%E4%B8%8Bselect%E5%85%83%E7%B4%A0%E9%BB%98%E8%AE%A4border-radius20160905%2F</url>
+    <content type="text"><![CDATA[在mac下的chrome,对于select元素会默认有一个border-radius，当然有些情况下并不需要圆角，所以就要去掉。 比较常用的方法是：1234.select &#123; -webkit-appearance: none; -webkit-border-radius: 0px;&#125; 但是这个方法有个缺点，因为要浏览器默认样式全部干掉了，所以右边原本的上下箭头也没了，所以推荐另外一种方案：1234.select &#123; border: 0px; outline: 1px solid rgb(204,204,204);&#125; 这种方法的效果就比较完美。]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[整理低版本ie兼容问题的解决方案]]></title>
+    <url>%2F%E6%95%B4%E7%90%86%E4%BD%8E%E7%89%88%E6%9C%ACie%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%8820160525%2F</url>
+    <content type="text"><![CDATA[CSS hack1234\9 所有的IE10及之前* IE7以及IE7以下版本的_ IE6以及IE6以下版本的!important 提升样式优先级权重 1、ie6，7，8对H5标签兼容页面中引入html5shiv.js，下载地址:https://github.com/aFarkas/html5shiv 2、IE6双边距当元素浮动后，再设置同方向margin，会产生双边距1*display:inline; 3、IE6最小高度问题IE6下最小高度19px，想小于此高度，增加1*overflow:hidden; 4、li里元素都浮动 li 在IE6 7 下方会产生4px间隙问题针对li添加1*vertical-align: top; 5、浮动元素之间注释，导致多复制一个文字问题两个浮动元素中间有注释或者内联元素并且和父级宽度相差不超过3px时， - 两个浮动元素中间避免出现内联元素或者注释 - 与父级宽度相差3px或以上 6、IE6 7 父级元素的overflow:hidden 是包不住子级的relative针对ie6、7给父级元素添加相对定位12overflow: hidden;*position: relative; 7、IE6下绝对定位元素父级宽高是奇数,绝对定位元素的right和bottom值会有1px的偏差避免父级宽高出现奇数 8、IE6下绝对定位元素和浮动元素并列绝对定位元素消失浮动元素和绝对定位元素是同级的话定位元素就会消失解决:不处于同级 9、IE6 下input的空隙给input元素添加float 10、display:inline-blockIE6下使用12*display:inline;*zoom:1; 11、margin兼容性问题 margin-top传递触发BFC、haslayout，父元素增加12overflow: hidden;zoom:1; 上下margin叠压尽量使用同一方向的margin，比如都设置top或者bottom 12、p 包含块元素嵌套规则不要嵌套 13、IE6下子元素超出父级宽高，会把父级的宽高撑开不要让子元素的宽高超过父级 14、第一块元素浮动,第二块元素加margin值等于第一块元素,在IE6下会有间隙问题; 不建议这么写 用浮动解决 15、元素浮动之后,能设置宽度的话就给元素加宽度.如果需要宽度是内容撑开,就给它里边的块元素加上浮动浮动元素中存在块元素,给块元素增加float 16、IE6不支持png24 图片 JS插件(问题:不能处理body之上png24)下载地址:http://www.dillerdesign.com/experiment/DD_belatedPNG/#download 12345678910111213141516171819202122232425&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;meta charset="utf-8"&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="js/DD_belatedPNG_0.0.8a.js"&gt;&lt;/script&gt; &lt;script&gt; DD_belatedPNG.fix("img, div"); &lt;/script&gt; &lt;style&gt; body&#123; background-color: red; &#125; div&#123; width: 300px; height: 300px; background: url("img/png.png") no-repeat; &#125; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div&gt;&lt;/div&gt; &lt;img src="img/png.png" alt="" /&gt; &lt;/body&gt;&lt;/html&gt; 原生滤镜 12345678910111213141516171819202122&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;meta charset="utf-8"&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="js/DD_belatedPNG_0.0.8a.js"&gt;&lt;/script&gt; &lt;script&gt; DD_belatedPNG.fix("body"); &lt;/script&gt; &lt;style&gt; body&#123; width: 500px; height: 500px; background:red url("img/png.png") no-repeat; _background-image:none; _filter : progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/png.png", sizingMethod="crop"); &#125; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[移动端按钮交互变色]]></title>
+    <url>%2F%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%8C%89%E9%92%AE%E4%BA%A4%E4%BA%92%E5%8F%98%E8%89%B220160524%2F</url>
+    <content type="text"><![CDATA[web开发过程中，移动端按钮交互效果 1.点击按钮变色12345678910111213141516171819202122232425262728&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt; &lt;meta charset="utf-8"&gt; &lt;script type="text/javascript"&gt; document.body.addEventListener('touchstart', function () &#123;&#125;); &lt;/script&gt; &lt;style&gt; .btn&#123; font-size: 1.5em; line-height: 2em; text-align: center; color: #fff; background: #ce4f54; width: 200px; &#125; .btn:hover, .btn:active, .btn:focus&#123; background: #043d5d; &#125; &lt;/style&gt; &lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="btn"&gt;测试Test&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 如果不绑定事件，在pc和安卓上可以实现绑定事件为了在ios中生效; 2.使用css3属性实现缓交互12345678910111213141516171819202122232425262728293031&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;style&gt; .btn&#123; font-size: 1.5em; line-height: 2em; text-align: center; color: #fff; background: #ce4f54; width: 200px; transition: 0.5s all; -webkit-transition: 0.5s all; -o-transition: 0.5s all; -moz-transition: 0.5s all; -ms-transition: 0.5s all; &#125; .btn:hover, .btn:active&#123; background: #043d5d; &#125; &lt;/style&gt; &lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;div class=&quot;btn&quot;&gt;测试Test&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 3、通过js操作class这个已经很多人写了，就不用写例子了]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>wap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[mac软件]]></title>
+    <url>%2Fmac%E8%BD%AF%E4%BB%B620160425%2F</url>
+    <content type="text"><![CDATA[效率之王：Afred小帽子：通过前人的配置，替代掉了 有道词典、发音工具、开关机、快速搜索、地图、Spotlight等应用。 主力编辑器：Atom因为高颜值、强大的插件和预览功能 取代了之前的sublime、Bracket、Pycharm和Mou等。 辅助编辑器：iPython、Rstudio、MacVim、Xcode 文档查询：Dash 相当于一本开发者字典。 SSH登陆：Zoc （ssh登陆免密码，区别于ssh证书登陆。），butterfly（直接将terminal构建在网页中，方便任意设备应急登陆服务器处理bug） 数据库管理：Sequel Pro（MySQL）比较简洁 而且免费 思维导图：Xmind 团队协作：Teamviewer（屏幕共享）、Skype（语音通话）、Trello（任务分配）、QQ（普通协作）、http://Coding.net（代码管理） 爬虫：http://import.io(超越scrapy的傻瓜式爬虫，可结合infogr.am做信息图) 图片处理：Photoshop FTP登陆：Cyberduck代替了之前的FileZilla 类似360工具：CleanMyMac Word类需求：基本用markdown解决，word应急。apidoc写api文档、sphinx写普通文档、knitr生成网页、slidify生成PPT、pandoc转换文档格式 Excel类需求：Mac下用Google Sheet偶尔将就用一下excel，切换到Win下必用Excel。 PPT类需求：Mac下用Keynote 作图，切换到Win下用Powerpoint 辅助Git管理：GitHub Desktop、SourceTree、GitUp（http://Coding.net/GitLab) 科学上网：之前是某径，现在是某摆（都停止了注册服务） 个人wordpress站点管理：wordpress + MAMP + 各种wordpress插件 Chrome插件：FE助手、GitHub助手、二维码生成器、vimium、批量图片下载器、悬停鼠标显示大图、chronos下载器 下载：百度云盘、迅雷、新浪微盘 邮件收发：MailBOX PDF修改： Abodbe Acrobat 学术研究：LaTex、Lyx、Zotero 辅助终端：iTerm、TotalTerminal、butterfly 仿真Win：XtraFinder 播客：安卓设备上基本不用，苹果设备上用Podcast，主要收听CNN Student News，Nightly News，Daily News，IT公论等 金融软体：MT4 简单自动化办公：Automator，配合shell和apple script脚本。 高级自动化办公：Jenkins、Git、Docker 语音识别：Mac用自带，移动设备用Google Now 语音处理：Audition 在线教育：YouTube为主，TreeHouse、极客学院、可汗学院、慕课、麦子、好奇猫、实验楼等为辅 简单笔记需求：现在用苹果设备自带的Note，偶尔用Keep 复杂笔记需求：曾经用Win的OneNote和Excel，后来用Evernote，现在基本用Git 运行Win需求：VirtualBox，以备不时只需。也用来体验linux、Chrome OS 常见软件管理：Brew和caskbrew 密码管理：Keychain Access]]></content>
+      <categories>
+        <category>mac</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[iTerm2配置]]></title>
+    <url>%2FiTerm2%E9%85%8D%E7%BD%AE20160425%2F</url>
+    <content type="text"><![CDATA[1、颜色Solarized首先下载 Solarized：1$ git clone git://github.com/altercation/solarized.git Terminal/iTerm2Mac OS X 自带的 Terminal 和免费的 iTerm2 都是很好用的工具，iTerm2 可以切分成多窗口，更方便一些。 如果你使用的是 Terminal 的话:在 solarized/osx-terminal.app-colors-solarized下双击 Solarized Dark ansi.terminal和Solarized Light ansi.terminal就会自动导入两种配色方案 Dark 和 Light 到 Terminal.app 里。 如果你使用的是 iTerm2 的话:到solarized/iterm2-colors-solarized下双击Solarized Dark.itermcolors和Solarized Light.itermcolors 两个文件就可以把配置文件导入到 iTerm 里。 VimVim 的配色最好和终端的配色保持一致，不然在 Terminal/iTerm2 里使用命令行 Vim 会很别扭：1234$ cd solarized$ cd vim-colors-solarized/colors$ mkdir -p ~/.vim/colors$ cp solarized.vim ~/.vim/colors/ 1234$ vi ~/.vimrcsyntax enableset background=darkcolorscheme solarized lsMac OS X 是基于 FreeBSD 的，所以一些工具 ls, top 等都是 BSD 那一套，ls 不是 GNU ls，所以即使 Terminal/iTerm2 配置了颜色，但是在 Mac 上敲入 ls 命令也不会显示高亮，可以通过安装 coreutils 来解决（brew install coreutils），不过如果对 ls 颜色不挑剔的话有个简单办法就是在 .bash_profile 里输出 CLICOLOR=1：12345678$ vi ~/.bash_profilealias ls=&apos;ls -G&apos;alias ll=&apos;ls -l&apos;alias grep=&apos;grep --color&apos;export CLICOLOR=1export LSCOLORS=gxfxcxdxbxegedabagacadexport PS1=&apos;\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$&apos;export TERM=xterm-256color]]></content>
+      <categories>
+        <category>其他技术</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[mac系统终端下忽略大小写与git自动补全]]></title>
+    <url>%2Fmac%E7%B3%BB%E7%BB%9F%E7%BB%88%E7%AB%AF%E4%B8%8B%E5%BF%BD%E7%95%A5%E5%A4%A7%E5%B0%8F%E5%86%99%E4%B8%8Egit%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A820160310%2F</url>
+    <content type="text"><![CDATA[1、下载git-completion.bash 并放到home 目录下：1$ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash 2、1$ nano ~/.bash_profile 将如下行放到.bash_profile 文件中123if [ -f ~/.git-completion.bash ]; then. ~/.git-completion.bashfi 保存后退出 3、将其立即生效：1source ~/.bash_profile 重启终端进入git目录，就可以自动补全了 忽略大小写：1、打开终端，输入：1$ nano .inputrc 2、在里面粘贴上以下语句：123set completion-ignore-case onset show-all-if-ambiguous onTAB: menu-complete 3、Control+O，回车，Control+x退出，然后重启终端，OK！]]></content>
+      <categories>
+        <category>其他技术</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[sublime配置文件设置.md]]></title>
+    <url>%2Fsublime%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE20160310%2F</url>
+    <content type="text"><![CDATA[sublime text3 常用插件 1、代码格式化：html-css-js prettify 2、代码注释：docBlockr 3、代码管理：git、gitGutter 4、快速编辑：emmet 5、代码匹配：bracket highlighter 6、css添加私有前缀：sublime-autoprefixer 7、快捷输入文件名：autoFileName 8、代码提示：sublime codeintel 配置文件: 12345678910111213141516171819&#123;&quot;ignored_packages&quot;:[&quot;Vintage&quot;], //vim模式&quot;line_padding_bottom&quot;: 2,&quot;line_padding_top&quot;: 2, //上下行距&quot;open_files_in_new_window&quot;: false, //多窗口&quot;tab_size&quot;: 2, //tab缩进&quot;translate_tabs_to_spaces&quot;: true,&quot;update_check&quot;: false, //更新检查&quot;word_wrap&quot;: false,//自动换行&quot;color_scheme&quot;: &quot;Packages/Color Scheme - Default/IDLE.tmTheme&quot;,&quot;default_encoding&quot;: &quot;UTF-8&quot;, //默认编码格式&quot;show_encoding&quot;: true, //显示文件编码&quot;font_size&quot;: 14, //字体大小&quot;highlight_line&quot;: true,//高亮显示编辑行&quot;trim_trailing_white_space_on_save&quot;: true //保存时去掉每行最后的空格&#125; 1234[&#123; &quot;keys&quot;: [&quot;alt+shift+f&quot;], &quot;command&quot;: &quot;reindent&quot; &#125;, //格式化代码&#123; &quot;keys&quot;: [&quot;ctrl+shift+[&quot;], &quot;command&quot;: &quot;fold_by_level&quot;,&quot;args&quot;:&#123;&quot;level&quot;:2&#125;&#125; //折叠代码]]]></content>
+      <categories>
+        <category>mac</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
       </tags>
   </entry>
   <entry>
